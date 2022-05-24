@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es-MX" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=2, minimum-scale=1" />
+    <meta name="theme-color" content="#003C5B" />
+    <meta name="robots" content="follow" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Amate Travel - Cargando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100vh;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Encode Sans', sans-serif;
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .m-auto {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .main-content {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 600px;
+            width: 100%;
+            background-color: #fff;
+            -wekit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .card-header>h1 {
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        .card-header>img {
+            max-width: 320px;
+        }
+
+        .card-main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px;
+            grid-template-rows: minmax(100px, auto);
+        }
+
+        .col-g {
+            padding: 20px;
+        }
+
+        .col-g>img {
+            max-width: 140px;
+            animation: pulse 2s infinite;
+
+        }
+
+        .col-g2 {
+            padding: 20px;
+        }
+
+        .col-g2>img {
+            max-width: 140px;
+            animation: pulseinverter 2s infinite;
+
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.85);
+            }
+
+            70% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(0.85);
+            }
+        }
+
+        @keyframes pulseinverter {
+            0% {
+                transform: scale(1.1);
+            }
+
+            70% {
+                transform: scale(0.85);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .card-footer>h2,
+        .card-footer>h3 {
+            font-weight: 400;
+        }
+
+        .card-add {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+            gap: 0px;
+        }
+
+        .contain-image {
+            padding: 10px 20px;
+        }
+
+        .contain-image>img {
+            max-width: 160px;
+
+        }
+
+
+        .contain-image-end-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: minmax(50px, auto);
+            gap: 0px;
+            align-items: center;
+        }
+
+        @media (max-width: 600px) {
+
+            h1,
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+
+            .content {
+                top: 10%;
+                position: relative;
+                -wekit-transform: translate(0px);
+                -moz-transform: translate(0px);
+                -o-transform: translate(0px);
+                -ms-transform: translate(0px);
+                transform: translate(0px);
+                left: 0%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="card">
+            <div class="card-header">
+                <img src="./images/Amate-Travel-El-Salvador.png" alt="Amate Travel" class="w100 m-auto" />
+
+                <h1 class="text-center">
+                    Espera un momento, estamos buscando las
+                    <b>mejores opciones</b> para ti.
+                </h1>
+            </div>
+            <div class="card-main">
+                <div class="col-g">
+                    <img src="./images/logo-amate1.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="col-g2">
+                    <img src="./images/logo-amate2.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="col-g">
+                    <img src="./images/logo-amate3.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+            </div>
+            <div class="card-footer">
+                <h2 class="text-center">
+                    Tambi&eacute;n puedes <br />pagar tus viajes en
+                    <b> puntos o tasa 0%</b>
+                </h2>
+                <h3 class="text-center">Consulta con un agente de servicio</h3>
+            </div>
+            <div class="card-add">
+                <div class="contain-image">
+                    <img src="./images/banco-promerica.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/Banco-agricola-sv.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/bac.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/banco-g-y-t.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/banco-hipotecario.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/banco-industrial.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+            </div>
+            <div class="contain-image-end-2">
+                <div class="contain-image">
+                    <img src="./images/Banco-cuscatlan-sv.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+                <div class="contain-image">
+                    <img src="./images/BancoDavivienda.png" alt="Amate Travel" class="w100 m-auto" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
